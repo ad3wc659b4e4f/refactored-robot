@@ -15,7 +15,7 @@ timezone: 'Asia/Shanghai'
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://lynxcatthethird.github.io/
 permalink: article/:abbrlink/
-permalink_defaults: null
+permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
@@ -27,11 +27,11 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-i18n_dir: ':lang'
-skip_render: null
+i18n_dir: :lang
+skip_render:
 
 # Writing
-new_post_name: ':title.md' # File name of new posts
+new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -63,12 +63,12 @@ prismjs:
 index_generator:
   path: ''
   per_page: 10
-  order_by: '-date'
+  order_by: -date
 
 # Category & Tag
 default_category: uncategorized
-category_map: null
-tag_map: null
+category_map:
+tag_map:
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -81,7 +81,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: mtime
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -90,9 +90,9 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include: null
-exclude: null
-ignore: null
+include:
+exclude:
+ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -115,58 +115,58 @@ nofollow:
   enable: true
   field: site
   exclude:
-    - 'exclude1.com'
-    - 'exclude2.com'
-minify:
-  preview: true ## 本地预览时是否压缩
-  exclude: ['*.min.*']
-  js:
-    enable: true
-    sourceMap:
-      enable: false ## 生成 sourceMap
-      ## 将 sourceMappingURL 插入压缩后的 js 文件，如果为 false 则需要在浏览器开发者工具中手动添加 sourceMap
-      sourceMappingURL: false ## //# sourceMappingURL=xxx.js.map
-    ## 详细配置: https://github.com/terser/terser#minify-options
-    options: {}
-  css:
-    enable: true
-    ## 详细配置: https://github.com/clean-css/clean-css#compatibility-modes
-    options: {}
-  html:
-    enable: true
-    ## 详细配置: https://github.com/kangax/html-minifier#options-quick-reference
-    options:
-      minifyJS: true # Compressed JavaScript
-      minifyCSS: true # CSS Compressed
-      removeComments: true # Remove the comments
-      collapseWhitespace: true # Delete any extra space
-      removeAttributeQuotes: true # Delete attribute quotes
-  image:
-    enable: true
-    svg:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-svgo#imageminsvgooptionsbuffer
-      options: {}
-    jpg:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-jpegtran#options
-      options: {}
-    png:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-pngquant#options
-      options: {}
-    gif:
-      enable: true
-      ## 详细配置: https://www.npmjs.com/package/imagemin-gifsicle#options
-      options: {}
-    webp:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-webp#options
-      options: {}
-  font:
-    enable: false
-    ## 详细配置: https://github.com/Lete114/fontmin-spider#api
-    options: {}
+    # - 'exclude1.com'
+    # - 'exclude2.com'
+# minify:
+#   preview: true ## 本地预览时是否压缩
+#   exclude: ['*.min.*']
+#   js:
+#     enable: true
+#     sourceMap:
+#       enable: false ## 生成 sourceMap
+#       ## 将 sourceMappingURL 插入压缩后的 js 文件，如果为 false 则需要在浏览器开发者工具中手动添加 sourceMap
+#       sourceMappingURL: false ## //# sourceMappingURL=xxx.js.map
+#     ## 详细配置: https://github.com/terser/terser#minify-options
+#     options: {}
+#   css:
+#     enable: true
+#     ## 详细配置: https://github.com/clean-css/clean-css#compatibility-modes
+#     options: {}
+#   html:
+#     enable: true
+#     ## 详细配置: https://github.com/kangax/html-minifier#options-quick-reference
+#     options:
+#       minifyJS: true # Compressed JavaScript
+#       minifyCSS: true # CSS Compressed
+#       removeComments: true # Remove the comments
+#       collapseWhitespace: true # Delete any extra space
+#       removeAttributeQuotes: true # Delete attribute quotes
+#   image:
+#     enable: true
+#     svg:
+#       enable: true
+#       ## 详细配置: https://github.com/imagemin/imagemin-svgo#imageminsvgooptionsbuffer
+#       options: {}
+#     jpg:
+#       enable: true
+#       ## 详细配置: https://github.com/imagemin/imagemin-jpegtran#options
+#       options: {}
+#     png:
+#       enable: true
+#       ## 详细配置: https://github.com/imagemin/imagemin-pngquant#options
+#       options: {}
+#     gif:
+#       enable: true
+#       ## 详细配置: https://www.npmjs.com/package/imagemin-gifsicle#options
+#       options: {}
+#     webp:
+#       enable: true
+#       ## 详细配置: https://github.com/imagemin/imagemin-webp#options
+#       options: {}
+#   font:
+#     enable: false
+#     ## 详细配置: https://github.com/Lete114/fontmin-spider#api
+#     options: {}
 feed:
   enable: true
   type: atom

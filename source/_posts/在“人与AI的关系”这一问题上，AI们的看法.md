@@ -1,12 +1,9 @@
 ---
 title: 在“人与 AI 的关系”这一问题上，AI 们的看法
-katex: false
-mathjax: false
-mermaid: false
 abbrlink: 5e83efa
 date: 2023-07-31 17:46:54
 updated: 2023-07-31 17:46:54
-cover: https://s2.hdslb.com/bfs/article/6e82b33c9eeddcb17103790d181dee1fdcec825c.jpg@1e_1c.webp
+photos: https://s2.hdslb.com/bfs/article/6e82b33c9eeddcb17103790d181dee1fdcec825c.jpg@1e_1c.webp
 categories:
   - 科学与技术
   - 计算机

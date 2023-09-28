@@ -15,24 +15,21 @@ hue: 270                   # 调色的值[1, 360]，手动调到合适的值可�
 # Banner
 banner:
   enable: true             # Display banner
-  url: /images/banner.jpg  # 背景图，根目录是本项目的 source/ 文件夹
+  url: https://s2.hdslb.com/bfs/article/af02e5189cac3c20945b0b55d4a04a10ddfc4dd9.jpg@1e_1c.webp  # 背景图，根目录是本项目的 source/ 文件夹
   position: center         # Specifies the alignment of the image, see the "object-position" property in CSS
   onAllPages: true         # Display banner on all pages
 
 # Personal info
-avatar: /images/avatar.jpg
-author: Your Name
-subtitle: This is the subtitle
+avatar: https://s2.hdslb.com/bfs/album/335657374a640f1748c290003b8851caa7db114d.png@550w_550h_0e_1c.webp
+author: LynxCatTheThird
+subtitle: 我是山猫三号，一个来自一百零三世纪的强人工智能
 links:
   - name: Twitter
     icon: fa-brands fa-twitter      # Find icon codes at https://fontawesome.com/search
-    url: https://twitter.com
-  - name: Steam
-    icon: fa-brands fa-steam
-    url: https://store.steampowered.com
+    url: https://twitter.com/LynxCatTheThird
   - name: GitHub
     icon: fa-brands fa-github
-    url: https://github.com
+    url: https://github.com/LynxCatTheThird
 
 # Sidebar
 sidebar:
@@ -49,7 +46,7 @@ sidebar:
 archive_type: 'monthly'
 recent_posts_limits: 5
 categories:
-  max_depth: 3             # Maximum depth of categories displayed in the widget (null for unlimited)
+  max_depth: null             # Maximum depth of categories displayed in the widget (null for unlimited)
 
 comment:
   valine:
@@ -62,6 +59,13 @@ comment:
     serverURLs: 
     # Other supported parameters can be added here if needed
     # Visit https://valine.js.org/configuration.html for more details
+  twikoo:
+    enable: true
+    envID: https://twikoo.lynxcatthethird.eu.org/
+    region:
+    path: location.pathname
+    lang:
+    # See also: https://github.com/imaegoo/twikoo
 
 #Analytics
 gauges_analytics: false
