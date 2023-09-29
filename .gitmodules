@@ -1,0 +1,4 @@
+[submodule "themes/vivia"]
+	path = themes/vivia
+	url = https://github.com/LynxCatTheThird/hexo-theme-vivia.git
+	branch = dev
