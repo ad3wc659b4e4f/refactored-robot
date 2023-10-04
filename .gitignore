@@ -6,3 +6,7 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+_config.vivia_pr.yml
+themes/vivia-pr/
+t
+t.exe

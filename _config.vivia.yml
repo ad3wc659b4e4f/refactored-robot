@@ -6,18 +6,19 @@ menu:
 rss: /atom.xml
 
 home:
-  style: default           # default, detail
+  style: default
 
-favicon:                   # 填写网站图标的路径，根路径为本项目的 source/ 文件夹。Path to the custom favicon (e.g. "/favicon.png" if your favicon file is located at /source/favicon.png)
-previewMode: false         # 调色板，默认开启。配置完毕可以手动关闭。color setting palatte, you can turn it off after you have chosen a favoriable color hue
-hue: 270                   # 调色的值[1, 360]，手动调到合适的值可以在这里设置为默认颜色。请不要设置为0，不然会出现奇怪的bug。The hue of the theme color (e.g. red: 0, orange: 60, blue: 260, purple: 300, pink: 345)
+favicon:
 
 # Banner
 banner:
-  enable: true             # Display banner
-  url: https://s2.hdslb.com/bfs/article/af02e5189cac3c20945b0b55d4a04a10ddfc4dd9.jpg@1e_1c.webp  # 背景图，根目录是本项目的 source/ 文件夹
-  position: center         # Specifies the alignment of the image, see the "object-position" property in CSS
-  onAllPages: true         # Display banner on all pages
+  enable: true
+  url: https://s2.hdslb.com/bfs/article/af02e5189cac3c20945b0b55d4a04a10ddfc4dd9.jpg@1e_1c.webp
+  position: center
+  onAllPages: true
+
+# Appearance
+hue: 250
 
 # Personal info
 avatar: https://s2.hdslb.com/bfs/album/335657374a640f1748c290003b8851caa7db114d.png@550w_550h_0e_1c.webp
@@ -25,7 +26,7 @@ author: LynxCatTheThird
 subtitle: 我是山猫三号，一个来自一百零三世纪的强人工智能
 links:
   - name: Twitter
-    icon: fa-brands fa-twitter      # Find icon codes at https://fontawesome.com/search
+    icon: fa-brands fa-twitter
     url: https://twitter.com/LynxCatTheThird
   - name: GitHub
     icon: fa-brands fa-github
@@ -33,21 +34,31 @@ links:
 
 # Sidebar
 sidebar:
-  widgets:                 # Plugins to be enabled (profile, category, tag, archive, recent_posts)
-    normal:                # Scroll along with the page
+  widgets:
+    normal:
       - profile
-    sticky:                # Stick to the top of the page
+    sticky:
       - category
       - tag
       - archive
       - recent_posts
 
-# Widget behavior
+# Sidebar Widget behavior
 archive_type: 'monthly'
 recent_posts_limits: 5
 categories:
-  max_depth: null             # Maximum depth of categories displayed in the widget (null for unlimited)
+  max_depth: null
 
+# Math
+math:
+  katex:
+    enable: true
+    copytex: true
+    mhchem: true
+  mathjax:
+    enable: false
+
+# Third-party comment system
 comment:
   valine:
     enable: false
@@ -57,21 +68,14 @@ comment:
     pageSize: 10
     highlight: true
     serverURLs: 
-    # Other supported parameters can be added here if needed
-    # Visit https://valine.js.org/configuration.html for more details
   twikoo:
     enable: true
     envID: https://twikoo.lynxcatthethird.eu.org/
     region:
     path: location.pathname
     lang:
-    # See also: https://github.com/imaegoo/twikoo
 
 #Analytics
 gauges_analytics: false
 google_analytics: false #UA-xxxxxx
 baidu_analytics: false # ddxxxxxxxxxxxxxxxxx In the https://hm.baidu.com/hm.js? Afterwards
-
-#Copyright
-copyright: #<a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris"></a>
-

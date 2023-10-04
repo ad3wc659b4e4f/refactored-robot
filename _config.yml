@@ -225,5 +225,5 @@ deploy:
     repository: git@github.com:LynxCatTheThird/lynxcatthethird.github.io.git
     branch: main
   - type: git
-    repository: git@github.com:ara1145/ara1145.github.io.git
+    repository: git@github.com:LeptailTheFirst/LeptailTheFirst.github.io.git
     branch: main
