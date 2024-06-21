@@ -184,11 +184,11 @@ proxy_providers_header: &proxy_providers_header
     - "v2rayn"
     - "v2rayng"
 proxy_providers_health_check: &proxy_providers_health_check
-  url: "http://captive.apple.com/" # 使⽤ https ,防⽌⽆良⽼板伪造延迟! https://www.gstatic.com/generate_204 https://cp.cloudflare.com
+  url: "https://cp.cloudflare.com" # 使⽤ https ,防⽌⽆良⽼板伪造延迟! https://www.gstatic.com/generate_204 https://cp.cloudflare.com
   interval: 60 # 测试间隔,如不为 0 则启用定时测试,单位 s
   timeout: 5000 # 健康检查超时时间,单位为 ms
   lazy: false # 懒惰状态，默认为true,未选择到当前策略组时，不进行测试
-  expected-status: "200" # 期望状态,只有当响应状态码与期望状态一致时才认为节点可用
+  expected-status: "204" # 期望状态,只有当响应状态码与期望状态一致时才认为节点可用
 proxy_providers_override: &proxy_providers_override
   udp: true # 是否允许 UDP 通过代理
   ip-version: "dual" # 设置节点使用 IP 版本,默认使用 dual ; dual/ipv4/ipv6/ipv4-prefer/ipv6-prefer
