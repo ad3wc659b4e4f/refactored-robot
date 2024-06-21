@@ -12,24 +12,28 @@
     "version": "6.3.0"
   },
   "dependencies": {
-    "colorjs.io": "^0.4.5",
-    "hexo": "^7.0.0",
+    "colorjs.io": "^0.5.0",
+    "hexo": "^7.2.0",
     "hexo-abbrlink": "^2.2.1",
+    "hexo-clean-css": "^2.0.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^3.0.0",
+    "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
+    "hexo-html-minifier": "^1.0.0",
     "hexo-minify": "^1.8.1",
     "hexo-pangu": "^0.2.2",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^6.2.0",
-    "hexo-renderer-stylus": "^3.0.0",
+    "hexo-renderer-marked": "^6.3.0",
+    "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-symbols-count-time": "^0.7.1",
     "hexo-tag-mmedia": "^1.2.1",
-    "stylus": "^0.62.0"
+    "hexo-uglify": "^2.0.0",
+    "stylus": "^0.63.0"
   }
 }
