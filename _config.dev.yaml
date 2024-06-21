@@ -40,14 +40,14 @@ geodata-loader: "memconservative" # GEO 文件加载模式 standard/memconservat
 geo-auto-update: true # 自动更新 GEO 是否启用,可选 true/false
 geo-update-interval: 12 # 更新间隔,单位 h
 geox-url: # 自定 GEO 下载地址
-  geoip: "https://github.moeyy.xyz/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat"
-  geosite: "https://github.moeyy.xyz/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat"
-  mmdb: "https://github.moeyy.xyz/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/country.mmdb"
-  asn: "https://github.moeyy.xyz/https://raw.githubusercontent.com/xishang0128/geoip/release/GeoLite2-ASN.mmdb"
+  geoip: "https://github.tmby.shop/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat"
+  geosite: "https://github.tmby.shop/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat"
+  mmdb: "https://github.tmby.shop/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/country.mmdb"
+  asn: "https://github.tmby.shop/https://raw.githubusercontent.com/xishang0128/geoip/release/GeoLite2-ASN.mmdb"
 
 external-ui: "./ui" # 外部用户界面的路径
 external-ui-name: "metacubexd" # 自定义外部用户界面名字
-external-ui-url: "https://github.moeyy.xyz/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/main.zip" # 自定义外部用户界面下载地址
+external-ui-url: "https://github.tmby.shop/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/main.zip" # 自定义外部用户界面下载地址
 
 mode: "rule" # 运行模式 rule/global/direct ,暂不支持 script
 log-level: "silent" # 日志级别 silent/error/warning/info/debug
